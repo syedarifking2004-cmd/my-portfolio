@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syed Arif | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: white;
+      scroll-behavior: smooth;
+    }header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(10px);
+  padding: 15px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+header h1 { font-weight: 800; }
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover { color: #00f5ff; }
+
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  animation: fadeInDown 1.5s ease;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 20px;
+  opacity: 0.8;
+  animation: fadeIn 2s ease;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  background: #00f5ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background: #00c3ff;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap:40px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(0,255,255,0.2);
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0,0,0,0.5);
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Syed Arif</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><section id="home" class="hero">
+  <h2>Creative Developer & Problem Solver</h2>
+  <p>I build modern, animated and user-friendly websites.</p>
+  <a href="#projects" class="btn">View My Work</a>
+</section><section id="about">
+  <h2>About Me</h2>
+  <p style="max-width:700px; margin-top:20px; opacity:0.8;">
+    I am a passionate learner focused on web development, problem solving and creating engaging digital experiences. I continuously improve my skills to build impactful projects.
+  </p>
+</section><section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card">HTML</div>
+    <div class="card">CSS</div>
+    <div class="card">JavaScript</div>
+    <div class="card">SQL</div>
+    <div class="card">Python</div>
+    <div class="card">Git</div>
+  </div>
+</section><section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Project 1</h3>
+      <p>python gui project attendence system</p>
+      <a href="#" class="btn">View</a>
+    </div>
+    <div class="card">
+      <h3>Project 2</h3>
+      <p>Interactive website with smooth animations.</p>
+      <a href="https://syedarifking2004-cmd.github.io/Restaurant-website-/" class="btn">View</a>
+    </div>
+</section><section id="contact">
+  <h2>Contact Me</h2>
+  <p style="margin-top:20px;">Email: syedarifking2004@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/syed-arif-581191348?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" style="color:#00f5ff;">linkedin.com</a></p>
+</section><footer>
+  © 2026 Syed Arif | All Rights Reserved
+</footer></body>
+</html>
